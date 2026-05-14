@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(
+    350deg,
+    #73C59C 0%,
+    #9EDDBD 40%,
+    #CFF1DF 70%,
+    #E4F8EE 100%
+);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo-container{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-banco{
+    width: 220px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon{
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.header h1{
+    color: #F0555F;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p{
+    color: #777;
+    font-size: 15px;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+select,
+input{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+select:focus,
+input:focus{
+    outline: none;
+
+    border-color: #73C59C;
+
+    box-shadow: 0px 0px 8px rgba(115,197,156,0.4);
+}
+
+button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #73C59C;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #477E63;
+    transform: scale(1.02);
+}
+
+.resultado{
+    margin-top: 35px;
+    background-color: #FFF7DB;
+    border: 2px solid #FFDF69;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.resultado h2{
+    color: #F0555F;
+    margin-bottom: 10px;
+}
+
+#resultado{
+    font-size: 30px;
+    font-weight: bold;
+    color: #73C59C;
+}
+
+@media(max-width: 600px){
+
+    .card{
+        padding: 25px;
+    }
+
+    .header h1{
+        font-size: 24px;
+    }
+
+    .logo-banco{
+        width: 180px;
+    }
+
+}

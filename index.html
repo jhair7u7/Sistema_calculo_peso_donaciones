@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sistema de Donaciones
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <div class="logo-container">
+
+            <img 
+                src="imagenes/banco-de-alimentos-Peru.png" 
+                alt="Banco de Alimentos"
+                class="logo-banco"
+            >
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card">
+
+            <div class="header">
+
+                <img 
+                    src="imagenes/logo.png" 
+                    alt="Logo"
+                    class="logo-icon"
+                >
+
+                <h1>
+                    Calculadora de Donaciones
+                </h1>
+
+                <p>
+                    Sistema de cálculo aproximado de peso y unidades
+                </p>
+
+            </div>
+
+            <!-- PRODUCTO -->
+            <div class="form-group">
+
+                <label>
+                    Producto
+                </label>
+
+                <select id="producto">
+
+                    <option value="" selected disabled>
+                        Seleccione un producto
+                    </option>
+
+                    <option value="PIEZA POLLO CRYSPY">
+                        PIEZA POLLO CRYSPY (RO)
+                    </option>
+
+                    <option value="PIEZA POLLO RECETA SECRETA">
+                        PIEZA POLLO RECETA SECRETA (ETC)
+                    </option>
+
+                    <option value="NUGGET">
+                        NUGGET (NG)
+                    </option>
+
+                    <option value="STRIP">
+                        STRIP
+                    </option>
+
+                    <option value="FILETE CHICKEN SANDWICH MARINADO">
+                        FILETE CHICKEN SANDWICH MARINADO (FILETE SANDWICH, FILETE ETC, FILETE)
+                    </option>
+
+                    <option value="FILETE KRUNCHY">
+                        FILETE KRUNCHY (KRUNCHY)
+                    </option>
+
+                    <option value="HOT WINGS">
+                        HOT WINGS (HW)
+                    </option>
+
+                    <option value="TENDERS">
+                        TENDERS
+                    </option>
+
+                    <option value="POP CORN">
+                        POP CORN
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- CANTIDAD -->
+            <div class="form-group">
+
+                <label>
+                    Cantidad de unidades
+                </label>
+
+                <input 
+                    type="number"
+                    id="cantidad"
+                    placeholder="Ingrese cantidad"
+                >
+
+                <button onclick="calcularPeso()">
+                    Calcular Peso
+                </button>
+
+            </div>
+
+            <!-- PESO -->
+            <div class="form-group">
+
+                <label>
+                    Peso total (KG)
+                </label>
+
+                <input 
+                    type="number"
+                    id="peso"
+                    placeholder="Ingrese peso"
+                    step="0.01"
+                >
+
+                <button onclick="calcularCantidad()">
+                    Calcular Cantidad
+                </button>
+
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="resultado">
+
+                <h2>
+                    Resultado
+                </h2>
+
+                <p id="resultado">
+                    ---
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
