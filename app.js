@@ -29,7 +29,7 @@
         const pesoUnitario = productos[producto];
         const pesoTotal = cantidad * pesoUnitario;
 
-        document.getElementById("resultado").innerText = "Peso Aproximado" + pesoTotal.toFixed(2) + "KG";
+        document.getElementById("resultado").innerText = "Peso Aproximado " + pesoTotal.toFixed(2) + "KG";
     }
 
     //Calcular la cantidad del Producto
@@ -47,5 +47,5 @@
         const pesoUnitario = productos[producto];
         const cantidad = peso / pesoUnitario;
 
-        document.getElementById("resultado").innerText = "Cantidad Aproximada " + Math.round(cantidad) + " unidades";
+        document.getElementById("resultado").innerText = "Cantidad Aproximada " + Math.round(cantidad) + " Unidades";
     }
