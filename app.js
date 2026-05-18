@@ -49,3 +49,15 @@
 
         document.getElementById("resultado").innerText = "Cantidad Aproximada " + Math.round(cantidad) + " Unidades";
     }
+
+    document.getElementById("cantidad").addEventListener("keypress", function(event){
+        if(event.key === "Enter"){
+            calcularPeso();
+        }
+    });
+
+    document.getElementById("peso").addEventListener("keypress", function(event){
+        if(event.key === "Enter"){
+            calcularCantidad();
+        }
+    });
